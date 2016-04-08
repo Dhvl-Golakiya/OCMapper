@@ -86,7 +86,7 @@
 		return self.propertyNameDictionary[key];
 	
 	// Support underscore case (EX: map first_name to firstName)
-	caseInsensitivePropertyName = [caseInsensitivePropertyName stringByReplacingOccurrencesOfString:@"_" withString:@""];
+//	caseInsensitivePropertyName = [caseInsensitivePropertyName stringByReplacingOccurrencesOfString:@"_" withString:@""];
 	
 	while (currentClass && currentClass != [NSObject class])
 	{

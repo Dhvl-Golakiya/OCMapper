@@ -416,16 +416,16 @@
 	
 	// Handle underscore conversion (ex: game_states to an array of GameState objects)
 	// Try using regex instead?
-	if ([className rangeOfString:@"_"].length) {
-		NSMutableString *newString = [NSMutableString string];
-
-		[[className componentsSeparatedByString:@"_"] enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL *stop) {
-			[newString appendString:obj.capitalizedString];
-		}];
-		
-		className = newString;
-	}
-	
+//	if ([className rangeOfString:@"_"].length) {
+//		NSMutableString *newString = [NSMutableString string];
+//
+//		[[className componentsSeparatedByString:@"_"] enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL *stop) {
+//			[newString appendString:obj.capitalizedString];
+//		}];
+//		
+//		className = newString;
+//	}
+//	
 	NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleNameKey];
 	
 	if (className.length) {
